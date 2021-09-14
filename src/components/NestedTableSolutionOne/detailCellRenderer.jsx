@@ -1,18 +1,8 @@
-import React, { useEffect } from "react";
-import { AgGridReact } from "ag-grid-react";
+import React from "react";
+import { AgGridReact, AgGridColumn } from "ag-grid-react";
 import { AllModules } from "ag-grid-enterprise";
 
 const DetailCellRenderer = ({ data, node, api }) => {
-  const colDefs = [
-    { headerName: "Ref #", field: "ref" },
-    { headerName: "Total Quantity", field: "quantity" },
-  ];
-
-  const defaultColDef = {
-    flex: 1,
-    minWidth: 120,
-  };
-
   const rowData = [
     {
       ref: null,
@@ -39,40 +29,48 @@ const DetailCellRenderer = ({ data, node, api }) => {
   return (
     <div className="full-width-panel">
       <AgGridReact
-        id="detailGrid"
         className="full-width-grid ag-theme-alpine"
-        columnDefs={colDefs}
-        defaultColDef={defaultColDef}
         rowData={rowData}
         modules={AllModules}
-      />
+      >
+        <AgGridColumn headerName="Tray #1">
+          <AgGridColumn field="ref" headerName="Ref." />
+          <AgGridColumn field="quantity" headerName="Total Quantity" />
+        </AgGridColumn>
+      </AgGridReact>
 
       <AgGridReact
-        id="detailGrid"
         className="full-width-grid ag-theme-alpine"
-        columnDefs={colDefs}
-        defaultColDef={defaultColDef}
         rowData={rowData}
         modules={AllModules}
-      />
+      >
+        <AgGridColumn headerName="Tray #2">
+          <AgGridColumn field="ref" headerName="Ref." />
+          <AgGridColumn field="quantity" headerName="Total Quantity" />
+        </AgGridColumn>
+      </AgGridReact>
 
       <AgGridReact
-        id="detailGrid"
         className="full-width-grid ag-theme-alpine"
-        columnDefs={colDefs}
-        defaultColDef={defaultColDef}
         rowData={rowData}
         modules={AllModules}
-      />
+      >
+        <AgGridColumn headerName="Tray #3">
+          <AgGridColumn field="ref" headerName="Ref." />
+          <AgGridColumn field="quantity" headerName="Total Quantity" />
+        </AgGridColumn>
+      </AgGridReact>
 
       <AgGridReact
-        id="detailGrid"
         className="full-width-grid ag-theme-alpine"
-        columnDefs={colDefs}
-        defaultColDef={defaultColDef}
         rowData={rowData}
         modules={AllModules}
-      />
+      >
+        <AgGridColumn headerName="Tray #4">
+          <AgGridColumn field="ref" headerName="Ref." />
+          <AgGridColumn field="quantity" headerName="Total Quantity" />
+        </AgGridColumn>
+      </AgGridReact>
     </div>
   );
 };

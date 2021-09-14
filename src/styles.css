@@ -1,20 +1,12 @@
-.example-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 .full-width-panel {
   height: 100%;
   width: 100%;
-  padding: 5px;
   display: flex;
   flex-direction: row;
 }
 
 .full-width-grid {
   height: calc(100% - 50px) !important;
-  width: 20%;
   flex: 1;
   margin: 24px;
 }

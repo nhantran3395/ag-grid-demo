@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AgGridColumn, AgGridReact } from "ag-grid-react";
 import "ag-grid-enterprise";
 import "ag-grid-community/dist/styles/ag-grid.css";
@@ -12,31 +12,25 @@ const NestedTableSolutionOne = () => {
   ];
 
   return (
-    <div style={{ width: "100%", height: "800px" }}>
-      <div className="example-wrapper">
-        <div
-          id="myGrid"
-          style={{
-            height: "100%",
-            width: "100%",
-          }}
-          className="ag-theme-alpine"
-        >
-          <AgGridReact
-            defaultColDef={{ flex: 1 }}
-            masterDetail={true}
-            detailRowHeight={310}
-            detailCellRenderer={"myDetailCellRenderer"}
-            frameworkComponents={{ myDetailCellRenderer: DetailCellRenderer }}
-            rowData={rowData}
-          >
-            <AgGridColumn
-              field="trayEquipment"
-              cellRenderer="agGroupCellRenderer"
-            />
-          </AgGridReact>
-        </div>
-      </div>
+    <div
+      style={{
+        height: "800px",
+        width: "100%",
+      }}
+      className="ag-theme-alpine"
+    >
+      <AgGridReact
+        defaultColDef={{ flex: 1 }}
+        masterDetail={true}
+        detailCellRenderer={"myDetailCellRenderer"}
+        frameworkComponents={{ myDetailCellRenderer: DetailCellRenderer }}
+        rowData={rowData}
+      >
+        <AgGridColumn
+          field="trayEquipment"
+          cellRenderer="agGroupCellRenderer"
+        />
+      </AgGridReact>
     </div>
   );
 };
