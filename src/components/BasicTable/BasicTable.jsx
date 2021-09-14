@@ -10,28 +10,28 @@ const BasicTable = () => {
       ref: "B",
       description: "PPF-402 Phenol Feed Machine",
       maxPerLoad: 1,
-      numInLoad: null,
+      numInLoad: "N/A",
       numTrayDisplaced: 2,
     },
     {
       ref: "C",
       description: "CUNO Flex Hose",
       maxPerLoad: 2,
-      numInLoad: null,
+      numInLoad: "N/A",
       numTrayDisplaced: 2,
     },
     {
       ref: "D",
       description: "PVDF (Harvest) Wand",
       maxPerLoad: 1,
-      numInLoad: null,
+      numInLoad: "N/A",
       numTrayDisplaced: 2,
     },
     {
       ref: "K",
       description: "Vessel Product Recovery Tool",
       maxPerLoad: 1,
-      numInLoad: null,
+      numInLoad: "N/A",
       numTrayDisplaced: 1,
     },
   ];
@@ -43,7 +43,12 @@ const BasicTable = () => {
           <AgGridColumn headerName="Ref." field="ref" editable />
           <AgGridColumn headerName="Description" field="description" editable />
           <AgGridColumn headerName="Max/Load" field="maxPerLoad" editable />
-          <AgGridColumn headerName="# in Load" field="numInLoad" editable />
+          <AgGridColumn
+            headerName="# in Load"
+            field="numInLoad"
+            editable
+            checkboxSelection
+          />
           <AgGridColumn
             headerName="# Trays Displaced"
             field="numTrayDisplaced"

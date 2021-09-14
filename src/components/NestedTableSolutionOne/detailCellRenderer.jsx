@@ -5,23 +5,23 @@ const DetailCellRenderer = ({ data, node, api }) => {
   const rowData = [
     {
       ref: null,
-      quantity: null,
+      quantity: "N/A",
     },
     {
       ref: null,
-      quantity: null,
+      quantity: "N/A",
     },
     {
       ref: null,
-      quantity: null,
+      quantity: "N/A",
     },
     {
       ref: null,
-      quantity: null,
+      quantity: "N/A",
     },
     {
       ref: null,
-      quantity: null,
+      quantity: "N/A",
     },
   ];
 
@@ -33,7 +33,12 @@ const DetailCellRenderer = ({ data, node, api }) => {
       >
         <AgGridColumn headerName="Tray #1">
           <AgGridColumn field="ref" headerName="Ref." editable />
-          <AgGridColumn field="quantity" headerName="Total Quantity" editable />
+          <AgGridColumn
+            field="quantity"
+            headerName="Total Quantity"
+            editable
+            checkboxSelection
+          />
         </AgGridColumn>
       </AgGridReact>
 
@@ -43,7 +48,12 @@ const DetailCellRenderer = ({ data, node, api }) => {
       >
         <AgGridColumn headerName="Tray #2">
           <AgGridColumn field="ref" headerName="Ref." editable />
-          <AgGridColumn field="quantity" headerName="Total Quantity" editable />
+          <AgGridColumn
+            field="quantity"
+            headerName="Total Quantity"
+            editable
+            checkboxSelection
+          />
         </AgGridColumn>
       </AgGridReact>
 
@@ -53,7 +63,12 @@ const DetailCellRenderer = ({ data, node, api }) => {
       >
         <AgGridColumn headerName="Tray #3">
           <AgGridColumn field="ref" headerName="Ref." editable />
-          <AgGridColumn field="quantity" headerName="Total Quantity" editable />
+          <AgGridColumn
+            field="quantity"
+            headerName="Total Quantity"
+            editable
+            checkboxSelection
+          />
         </AgGridColumn>
       </AgGridReact>
 
@@ -63,7 +78,12 @@ const DetailCellRenderer = ({ data, node, api }) => {
       >
         <AgGridColumn headerName="Tray #4">
           <AgGridColumn field="ref" headerName="Ref." editable />
-          <AgGridColumn field="quantity" headerName="Total Quantity" editable />
+          <AgGridColumn
+            field="quantity"
+            headerName="Total Quantity"
+            editable
+            checkboxSelection
+          />
         </AgGridColumn>
       </AgGridReact>
     </div>
