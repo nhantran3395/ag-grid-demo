@@ -34,8 +34,8 @@ const DetailCellRenderer = ({ data, node, api }) => {
         modules={AllModules}
       >
         <AgGridColumn headerName="Tray #1">
-          <AgGridColumn field="ref" headerName="Ref." />
-          <AgGridColumn field="quantity" headerName="Total Quantity" />
+          <AgGridColumn field="ref" headerName="Ref." editable />
+          <AgGridColumn field="quantity" headerName="Total Quantity" editable />
         </AgGridColumn>
       </AgGridReact>
 
@@ -45,8 +45,8 @@ const DetailCellRenderer = ({ data, node, api }) => {
         modules={AllModules}
       >
         <AgGridColumn headerName="Tray #2">
-          <AgGridColumn field="ref" headerName="Ref." />
-          <AgGridColumn field="quantity" headerName="Total Quantity" />
+          <AgGridColumn field="ref" headerName="Ref." editable />
+          <AgGridColumn field="quantity" headerName="Total Quantity" editable />
         </AgGridColumn>
       </AgGridReact>
 
@@ -56,8 +56,8 @@ const DetailCellRenderer = ({ data, node, api }) => {
         modules={AllModules}
       >
         <AgGridColumn headerName="Tray #3">
-          <AgGridColumn field="ref" headerName="Ref." />
-          <AgGridColumn field="quantity" headerName="Total Quantity" />
+          <AgGridColumn field="ref" headerName="Ref." editable />
+          <AgGridColumn field="quantity" headerName="Total Quantity" editable />
         </AgGridColumn>
       </AgGridReact>
 
@@ -67,8 +67,8 @@ const DetailCellRenderer = ({ data, node, api }) => {
         modules={AllModules}
       >
         <AgGridColumn headerName="Tray #4">
-          <AgGridColumn field="ref" headerName="Ref." />
-          <AgGridColumn field="quantity" headerName="Total Quantity" />
+          <AgGridColumn field="ref" headerName="Ref." editable />
+          <AgGridColumn field="quantity" headerName="Total Quantity" editable />
         </AgGridColumn>
       </AgGridReact>
     </div>
