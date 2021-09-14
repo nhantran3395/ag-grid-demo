@@ -1,6 +1,7 @@
 import React from "react";
 import BasicTable from "./components/BasicTable";
 import NestedTableSolutionOne from "./components/NestedTableSolutionOne";
+import MoreComplexTable from "./components/MoreComplexTable";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <BasicTable />
       <h1>Nested Table</h1>
       <NestedTableSolutionOne />
+      <h1>More Complex Table</h1>
+      <MoreComplexTable />
     </>
   );
 }
