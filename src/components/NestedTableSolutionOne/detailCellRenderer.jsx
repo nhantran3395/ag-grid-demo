@@ -1,6 +1,5 @@
 import React from "react";
 import { AgGridReact, AgGridColumn } from "ag-grid-react";
-import { AllModules } from "ag-grid-enterprise";
 
 const DetailCellRenderer = ({ data, node, api }) => {
   const rowData = [
@@ -31,7 +30,6 @@ const DetailCellRenderer = ({ data, node, api }) => {
       <AgGridReact
         className="full-width-grid ag-theme-alpine"
         rowData={rowData}
-        modules={AllModules}
       >
         <AgGridColumn headerName="Tray #1">
           <AgGridColumn field="ref" headerName="Ref." editable />
@@ -42,7 +40,6 @@ const DetailCellRenderer = ({ data, node, api }) => {
       <AgGridReact
         className="full-width-grid ag-theme-alpine"
         rowData={rowData}
-        modules={AllModules}
       >
         <AgGridColumn headerName="Tray #2">
           <AgGridColumn field="ref" headerName="Ref." editable />
@@ -53,7 +50,6 @@ const DetailCellRenderer = ({ data, node, api }) => {
       <AgGridReact
         className="full-width-grid ag-theme-alpine"
         rowData={rowData}
-        modules={AllModules}
       >
         <AgGridColumn headerName="Tray #3">
           <AgGridColumn field="ref" headerName="Ref." editable />
@@ -64,7 +60,6 @@ const DetailCellRenderer = ({ data, node, api }) => {
       <AgGridReact
         className="full-width-grid ag-theme-alpine"
         rowData={rowData}
-        modules={AllModules}
       >
         <AgGridColumn headerName="Tray #4">
           <AgGridColumn field="ref" headerName="Ref." editable />
