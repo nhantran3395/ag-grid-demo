@@ -37,7 +37,7 @@ const BasicTable = () => {
   ];
 
   return (
-    <div className="ag-theme-alpine" style={{ height: 400, width: 1000 }}>
+    <div className="basic-table-container ag-theme-alpine">
       <AgGridReact rowData={rowData}>
         <AgGridColumn headerName="Top Shelf-Restricted Equipment">
           <AgGridColumn headerName="Ref." field="ref" editable />

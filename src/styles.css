@@ -1,3 +1,13 @@
+.basic-table-container {
+  width: 55vw;
+  height: 30vh;
+}
+
+.nested-table-container {
+  width: 90vw;
+  height: 80vh;
+}
+
 .full-width-panel {
   height: 100%;
   width: 100%;
@@ -6,7 +16,7 @@
 }
 
 .full-width-grid {
-  height: calc(100% - 50px) !important;
+  height: calc(100% - 48px) !important;
   flex: 1;
   margin: 24px;
 }

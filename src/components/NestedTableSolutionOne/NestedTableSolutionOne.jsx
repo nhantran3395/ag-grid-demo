@@ -12,13 +12,7 @@ const NestedTableSolutionOne = () => {
   ];
 
   return (
-    <div
-      style={{
-        height: "800px",
-        width: "100%",
-      }}
-      className="ag-theme-alpine"
-    >
+    <div className="nested-table-container ag-theme-alpine">
       <AgGridReact
         defaultColDef={{ flex: 1 }}
         masterDetail={true}
