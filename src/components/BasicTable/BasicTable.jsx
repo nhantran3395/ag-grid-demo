@@ -37,21 +37,14 @@ const BasicTable = () => {
   ];
 
   return (
-    <div className="ag-theme-alpine" style={{ height: 400, width: 1000 }}>
+    <div className="ag-theme-alpine" style={{ height: 400, width: 1200 }}>
       <AgGridReact rowData={rowData}>
-        <AgGridColumn headerName="Top Shelf-Restricted Equipment">
-          <AgGridColumn headerName="Ref." field="ref"></AgGridColumn>
-          <AgGridColumn
-            headerName="Description"
-            field="description"
-          ></AgGridColumn>
-          <AgGridColumn headerName="Max/Load" field="maxPerLoad"></AgGridColumn>
-          <AgGridColumn headerName="# in Load" field="numInLoad"></AgGridColumn>
-          <AgGridColumn
-            headerName="# Trays Displaced"
-            field="numTrayDisplaced"
-          ></AgGridColumn>
-        </AgGridColumn>
+        <AgGridColumn headerName="Top Shelf-Restricted Equipment" />
+        <AgGridColumn headerName="Ref." field="ref" />
+        <AgGridColumn headerName="Description" field="description" />
+        <AgGridColumn headerName="Max/Load" field="maxPerLoad" />
+        <AgGridColumn headerName="# in Load" field="numInLoad" />
+        <AgGridColumn headerName="# Trays Displaced" field="numTrayDisplaced" />
       </AgGridReact>
     </div>
   );
