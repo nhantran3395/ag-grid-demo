@@ -29,6 +29,7 @@ const DetailCellRenderer = ({ data, node, api }) => {
     <div className="full-width-panel">
       <AgGridReact
         className="full-width-grid ag-theme-alpine"
+        defaultColDef={{ flex: 1 }}
         rowData={rowData}
       >
         <AgGridColumn headerName="Tray #1">
@@ -44,6 +45,7 @@ const DetailCellRenderer = ({ data, node, api }) => {
 
       <AgGridReact
         className="full-width-grid ag-theme-alpine"
+        defaultColDef={{ flex: 1 }}
         rowData={rowData}
       >
         <AgGridColumn headerName="Tray #2">
@@ -59,6 +61,7 @@ const DetailCellRenderer = ({ data, node, api }) => {
 
       <AgGridReact
         className="full-width-grid ag-theme-alpine"
+        defaultColDef={{ flex: 1 }}
         rowData={rowData}
       >
         <AgGridColumn headerName="Tray #3">
@@ -74,6 +77,7 @@ const DetailCellRenderer = ({ data, node, api }) => {
 
       <AgGridReact
         className="full-width-grid ag-theme-alpine"
+        defaultColDef={{ flex: 1 }}
         rowData={rowData}
       >
         <AgGridColumn headerName="Tray #4">

@@ -38,7 +38,7 @@ const BasicTable = () => {
 
   return (
     <div className="basic-table-container ag-theme-alpine">
-      <AgGridReact rowData={rowData}>
+      <AgGridReact rowData={rowData} defaultColDef={{ flex: 1 }}>
         <AgGridColumn headerName="Top Shelf-Restricted Equipment">
           <AgGridColumn headerName="Ref." field="ref" editable />
           <AgGridColumn headerName="Description" field="description" editable />
