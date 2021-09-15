@@ -38,7 +38,7 @@ const DetailCellRenderer = ({ data, node, api }) => {
             field="quantity"
             headerName="Total Quantity"
             editable
-            checkboxSelection
+            checkboxSelection={(row) => row.data.quantity === "N/A"}
           />
         </AgGridColumn>
       </AgGridReact>
@@ -54,7 +54,7 @@ const DetailCellRenderer = ({ data, node, api }) => {
             field="quantity"
             headerName="Total Quantity"
             editable
-            checkboxSelection
+            checkboxSelection={(row) => row.data.quantity === "N/A"}
           />
         </AgGridColumn>
       </AgGridReact>
@@ -70,7 +70,7 @@ const DetailCellRenderer = ({ data, node, api }) => {
             field="quantity"
             headerName="Total Quantity"
             editable
-            checkboxSelection
+            checkboxSelection={(row) => row.data.quantity === "N/A"}
           />
         </AgGridColumn>
       </AgGridReact>
@@ -86,7 +86,7 @@ const DetailCellRenderer = ({ data, node, api }) => {
             field="quantity"
             headerName="Total Quantity"
             editable
-            checkboxSelection
+            checkboxSelection={(row) => row.data.quantity === "N/A"}
           />
         </AgGridColumn>
       </AgGridReact>

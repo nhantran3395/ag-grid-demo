@@ -47,7 +47,7 @@ const BasicTable = () => {
             headerName="# in Load"
             field="numInLoad"
             editable
-            checkboxSelection
+            checkboxSelection={(row) => row.data.numInLoad === "N/A"}
           />
           <AgGridColumn
             headerName="# Trays Displaced"
